@@ -1,0 +1,75 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
+  <diagram name="Weather_Data_Pipeline" id="jBhw1YtrVjrbStGsmivi">
+    <mxGraphModel dx="1030" dy="611" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CJgDbr7jc8BNXRA43v6N-2" target="CJgDbr7jc8BNXRA43v6N-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-2" value="Weather&amp;nbsp;&lt;div&gt;API&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="65" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="CJgDbr7jc8BNXRA43v6N-4" target="CJgDbr7jc8BNXRA43v6N-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-4" value="Kafka" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="CJgDbr7jc8BNXRA43v6N-7" target="CJgDbr7jc8BNXRA43v6N-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="120.16666666666674" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CJgDbr7jc8BNXRA43v6N-7" target="CJgDbr7jc8BNXRA43v6N-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-7" value="PostgreSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="450" y="60" width="70" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-8" value="Data Source" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-9" value="Consumer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="260" y="168" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-10" value="Data Storage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="180" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-11" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="65.17" width="200" height="109.83" as="geometry">
+            <mxRectangle x="610" y="65.17" width="50" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-12" value="StreamLit (Optional)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="645" y="98" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-13" value="Visualization" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="665" y="175" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-14" value="Py" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="180" y="98" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-15" value="Py" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="380" y="98" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-16" value="Py" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="550" y="98" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-17" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="220" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-18" value="Data Analysis using SQL" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="CJgDbr7jc8BNXRA43v6N-17">
+          <mxGeometry x="20" y="30" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CJgDbr7jc8BNXRA43v6N-19" value="SQL" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="198" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
